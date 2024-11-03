@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: my-scraper
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "scrapy crawl my_spider -o output.json"
