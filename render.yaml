@@ -5,4 +5,3 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "scrapy crawl my_spider -o output.json"
